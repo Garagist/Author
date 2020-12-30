@@ -1,0 +1,9 @@
+'Garagist.Author:Document.AuthorContainer':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: l18n
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Document': false
+      'Garagist.Author:Document.Author': true

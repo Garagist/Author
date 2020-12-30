@@ -1,0 +1,7 @@
+'Garagist.Author:Mixin.Group':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        authorInformation:
+          label: i18n

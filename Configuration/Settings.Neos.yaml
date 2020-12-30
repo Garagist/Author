@@ -1,0 +1,9 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Garagist.Author': true
+    userInterface:
+      translation:
+        autoInclude:
+          'Garagist.Author': ['NodeTypes/*']

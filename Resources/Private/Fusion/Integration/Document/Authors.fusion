@@ -1,0 +1,7 @@
+prototype(Garagist.Author:Document.AuthorContainer) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:Page {
+        body = afx`
+            <Garagist.Author:Template.Page/>
+        `
+    }
+}

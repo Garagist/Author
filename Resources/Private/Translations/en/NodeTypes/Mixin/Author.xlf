@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"
+    xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Garagist.Author" source-language="en" target-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.author" xml:space="preserve">
+                <source>Author</source>
+                <target>Author</target>
+            </trans-unit>
+            <trans-unit id="properties.author.selectBoxEditor.placeholder" xml:space="preserve">
+                <source>Choose</source>
+                <target>Choose</target>
+            </trans-unit>
+            <trans-unit id="groups.authorInformation" xml:space="preserve">
+                <source>Author info</source>
+                <target>Author info</target>
+            </trans-unit>
+            <trans-unit id="properties.givenName" xml:space="preserve">
+                <source>First name</source>
+                <target>Frist name</target>
+            </trans-unit>
+            <trans-unit id="properties.family" xml:space="preserve">
+                <source>Last name</source>
+                <target>Last name</target>
+            </trans-unit>
+            <trans-unit id="properties.name" xml:space="preserve">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="properties.alternateName" xml:space="preserve">
+                <source>Alternate name</source>
+                <target>Alternate name</target>
+            </trans-unit>
+            <trans-unit id="properties.jobTitle" xml:space="preserve">
+                <source>Job title</source>
+                <target>Job title</target>
+            </trans-unit>
+            <trans-unit id="properties.description" xml:space="preserve">
+                <source>Description</source>
+                <target>Description</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

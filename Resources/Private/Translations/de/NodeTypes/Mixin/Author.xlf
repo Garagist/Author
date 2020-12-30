@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"
+    xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Garagist.Author" source-language="en" target-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.author" xml:space="preserve">
+                <source>Authors</source>
+                <target>Autor/innen</target>
+            </trans-unit>
+            <trans-unit id="properties.givenName" xml:space="preserve">
+                <source>First name</source>
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="properties.familyName" xml:space="preserve">
+                <source>Last name</source>
+                <target>Nachname</target>
+            </trans-unit>
+            <trans-unit id="properties.name" xml:space="preserve">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="properties.alternateName" xml:space="preserve">
+                <source>Alternate name</source>
+                <target>Alternativer Name</target>
+            </trans-unit>
+            <trans-unit id="properties.jobTitle" xml:space="preserve">
+                <source>Job title</source>
+                <target>Arbeitstitle</target>
+            </trans-unit>
+            <trans-unit id="properties.description" xml:space="preserve">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,5 @@
+'Garagist.Author:Mixin.AuthorContainerRequirement':
+  abstract: true
+  childNodes:
+    authors:
+      type: 'Garagist.Author:Document.AuthorContainer'
