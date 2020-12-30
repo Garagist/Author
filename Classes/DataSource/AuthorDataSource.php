@@ -3,6 +3,7 @@ namespace Garagist\Author\DataSource;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\PersistenceManagerInterface;
+use Neos\Flow\Security\Context as SecurityContext;
 use Neos\Neos\Domain\Service\UserService;
 use Neos\Neos\Service\DataSource\AbstractDataSource;
 use Neos\ContentRepository\Domain\Model\NodeInterface;
@@ -12,6 +13,11 @@ use Neos\Neos\Domain\Model\User;
 
 class AuthorDataSource extends AbstractDataSource
 {
+    /**
+     * @Flow\InjectConfiguration(package="Garagist.Author", path="filterByRole")
+     * @var array
+     */
+    protected $filters;
 
     /**
      * @var string
@@ -26,6 +32,12 @@ class AuthorDataSource extends AbstractDataSource
 
     /**
      * @Flow\Inject
+     * @var SecurityContext
+     */
+    protected $securityContext;
+
+    /**
+     * @Flow\Inject
      * @var PersistenceManagerInterface
      */
     protected $persistenceManager;
@@ -37,23 +49,38 @@ class AuthorDataSource extends AbstractDataSource
      */
     public function getData(NodeInterface $node = null, array $arguments = [])
     {
-        $options = [];
+        $users = $this->userService->getUsers();
+        $data = [];
+        $filteredUsers = [];
 
-        /** @var User */
-        foreach ($this->userService->getUsers() as $user) {
-            
-            /** @var Account */
-            foreach ($user->getAccounts() as $account) {
-                $roles = $account->getRoles();
+        if (is_array($this->filters) && !empty($this->filters)) {
+            /** @var User $user */
+            foreach ($users as $user) {
+                $accounts = $user->getAccounts();
 
-                /** @var Role */
-                foreach($roles as $role) {
-                    if ((string) $role === 'Neos.Neos:Editor') {
-                        $options[$this->persistenceManager->getIdentifierByObject($user)] = ['label' => $user->getLabel()];
+                /** @var Account $account */
+                foreach ($accounts as $account) {
+                    $roles = $account->getRoles();
+
+                    /** @var Role $role */
+                    foreach ($roles as $role) {
+                        if (in_array($role->getIdentifier(), $this->filters)) {
+                            $filteredUsers[] = $user;
+                        }
                     }
                 }
             }
+        } else {
+            $filteredUsers = $users;
         }
-        return $options;
+
+        foreach ($filteredUsers as $user) {
+            $data[] = [
+                'label' => $user->getLabel(),
+                'value' => $this->persistenceManager->getIdentifierByObject($user)
+            ];
+        }
+
+        return $data;
     }
 }

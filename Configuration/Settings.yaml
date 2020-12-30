@@ -1,0 +1,3 @@
+Garagist:
+  Author:
+    filterByRole: ['Neos.Neos:Administrator', 'Neos.Neos:AbstractEditor']
