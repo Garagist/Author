@@ -4,8 +4,8 @@
     <file original="" product-name="Garagist.Author" source-language="en" target-language="en" datatype="plaintext">
         <body>
             <trans-unit id="groups.authorInformation" xml:space="preserve">
-                <source>Author info</source>
-                <target>Author info</target>
+                <source>Author information</source>
+                <target>Author information</target>
             </trans-unit>
         </body>
     </file>
