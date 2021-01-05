@@ -1,0 +1,5 @@
+'Neos.Neos:Document':
+  constraints:
+    nodeTypes:
+      'Garagist.Author:Document.AuthorContainer': false
+      'Garagist.Author:Document.Author': false

@@ -1,0 +1,5 @@
+'Garagist.Author:Mixin.AuthorContainerRequirement':
+  abstract: true
+  constraints:
+    nodeTypes:
+      'Garagist.Author:Document.AuthorContainer': true
