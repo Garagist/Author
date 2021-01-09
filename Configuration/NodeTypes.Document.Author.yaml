@@ -7,4 +7,5 @@
     'Carbon.Image:Image': true
     'Carbon.Image:AlternativeText': true
   ui:
-    label: l18n
+    label: i18n
+    icon: user-edit

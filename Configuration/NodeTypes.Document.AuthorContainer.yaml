@@ -2,7 +2,8 @@
   superTypes:
     'Neos.Neos:Document': true
   ui:
-    label: l18n
+    label: i18n
+    icon: users
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
