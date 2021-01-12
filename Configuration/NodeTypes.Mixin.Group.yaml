@@ -5,3 +5,4 @@
       groups:
         authorInformation:
           label: i18n
+          icon: user-edit
