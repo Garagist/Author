@@ -1,7 +1,0 @@
-prototype(Garagist.Author:Template.Page) < prototype(Neos.Fusion:Component) {
-
-    renderer = afx`
-        tbd: author template
-    `
-
-}
