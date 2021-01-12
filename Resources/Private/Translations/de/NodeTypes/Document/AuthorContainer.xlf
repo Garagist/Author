@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
                 <source>Authors</source>
-                <target>Autor/innen</target>
+                <target>AutorInnen</target>
             </trans-unit>
         </body>
     </file>

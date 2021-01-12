@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="properties.authorReferences" xml:space="preserve">
                 <source>Authors</source>
-                <target>Autror/innen</target>
+                <target>AutorInnen</target>
             </trans-unit>
             <trans-unit id="properties.authorReferences.referenceBoxEditor.placeholder" xml:space="preserve">
                 <source>Choose</source>

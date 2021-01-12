@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="groups.authorInformation" xml:space="preserve">
                 <source>Author information</source>
-                <target>Autor/innen Information</target>
+                <target>AutorInnen Information</target>
             </trans-unit>
         </body>
     </file>

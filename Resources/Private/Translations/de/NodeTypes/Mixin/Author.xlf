@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="properties.author" xml:space="preserve">
                 <source>Authors</source>
-                <target>Autor/innen</target>
+                <target>AutorInnen</target>
             </trans-unit>
             <trans-unit id="properties.givenName" xml:space="preserve">
                 <source>First name</source>
@@ -25,7 +25,7 @@
             </trans-unit>
             <trans-unit id="properties.jobTitle" xml:space="preserve">
                 <source>Job title</source>
-                <target>Arbeitstitle</target>
+                <target>Berufsbezeichnung</target>
             </trans-unit>
             <trans-unit id="properties.description" xml:space="preserve">
                 <source>Description</source>

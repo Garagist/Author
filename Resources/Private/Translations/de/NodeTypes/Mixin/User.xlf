@@ -5,7 +5,7 @@
         <body>
             <trans-unit id="properties.user" xml:space="preserve">
                 <source>User</source>
-                <target>Benutzer/in</target>
+                <target>BenutzerIn</target>
             </trans-unit>
             <trans-unit id="properties.user.selectBoxEditor.placeholder" xml:space="preserve">
                 <source>Choose</source>
