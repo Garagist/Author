@@ -3,7 +3,7 @@
     "type": "neos-plugin",
     "license": "GPL-3.0-or-later",
     "require": {
-        "neos/neos": "*",
+        "neos/neos": "^5.3 || ^7.0"
     },
     "autoload": {
         "psr-4": {
