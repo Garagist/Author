@@ -6,7 +6,6 @@ use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Neos\Domain\Service\UserService;
-use Psr\Log\LoggerInterface;
 
 /**
  * A service for authors
@@ -50,7 +49,7 @@ class AuthorService
      * @param NodeInterface $node
      * @return void
      */
-    protected function setAuthorOfPostNodeToCurrentUser(NodeInterface $node)
+    protected function setAuthorOfPostNodeToCurrentUser(NodeInterface $node): void
     {
         $currentUser = $this->userService->getCurrentUser();
         $userIdentifier = $this->persistenceManager->getIdentifierByObject($currentUser);
