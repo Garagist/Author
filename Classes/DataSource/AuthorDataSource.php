@@ -6,7 +6,6 @@ use Neos\Flow\Persistence\PersistenceManagerInterface;
 use Neos\Flow\Security\Context as SecurityContext;
 use Neos\Neos\Domain\Service\UserService;
 use Neos\Neos\Service\DataSource\AbstractDataSource;
-use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\Flow\Security\Account;
 use Neos\Flow\Security\Policy\Role;
 use Neos\Neos\Domain\Model\User;
@@ -43,11 +42,9 @@ class AuthorDataSource extends AbstractDataSource
     protected $persistenceManager;
 
     /**
-     * @param NodeInterface $node The node that is currently edited (optional)
-     * @param array $arguments Additional arguments (key / value)
-     * @return mixed JSON serializable data
+     * @return array JSON serializable data
      */
-    public function getData(NodeInterface $node = null, array $arguments = [])
+    public function getData(): array
     {
         $users = $this->userService->getUsers();
         $data = [];
