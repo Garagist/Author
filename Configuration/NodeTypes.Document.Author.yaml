@@ -4,8 +4,6 @@
     'Garagist.Author:Mixin.Group': true
     'Garagist.Author:Mixin.User': true
     'Garagist.Author:Mixin.Author': true
-    'Carbon.Image:Image': true
-    'Carbon.Image:AlternativeText': true
   ui:
     label: i18n
     icon: user-edit
